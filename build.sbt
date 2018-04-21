@@ -1,6 +1,7 @@
 lazy val root = (project in file("."))
   .settings(
-    name := "g8-scala",
+    organization := "rolandtritsch",
+    name := "scala.g8",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
