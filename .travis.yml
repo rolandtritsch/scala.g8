@@ -1,0 +1,19 @@
+sudo: required
+
+language: scala
+
+notifications:
+  email:
+    recipients:
+      - roland@tritsch.org
+    on_success: always
+    on_failure: always
+
+before_install:
+
+script:
+  - sbt g8
+  - cd target/g8
+  - sbt run
+  - sbt test
+  - sbt ensimeConfig
