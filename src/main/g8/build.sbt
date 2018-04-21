@@ -1,12 +1,12 @@
 import Dependencies._
 
-lazy val root = (project in file(".")).
-  settings(
+lazy val root = (project in file("."))
+  .settings(
     inThisBuild(List(
-      organization := "com.example",
-      scalaVersion := "2.12.4",
+      organization := "org.tritsch.example",
+      scalaVersion := "2.12.5",
       version      := "0.1.0-SNAPSHOT"
     )),
-    name := "scala-minimal",
+    name := "scala-roland",
     libraryDependencies += scalaTest % Test
   )
