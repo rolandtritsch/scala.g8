@@ -1,3 +1,5 @@
+import ReleaseTransformations._
+
 lazy val root = (project in file("."))
   .settings(
     organization := "rolandtritsch",
