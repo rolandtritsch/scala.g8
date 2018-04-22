@@ -1,6 +1,7 @@
 # My default Scala project template
 
 ![Build Status](https://travis-ci.org/rolandtritsch/scala.g8.svg?branch=master)
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/rolandtritsch/scala.g8)
 
 This is an/another **opinionated** template to create a scala project.
 
