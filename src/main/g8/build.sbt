@@ -3,10 +3,9 @@ import Dependencies._
 lazy val root = (project in file("."))
   .settings(
     inThisBuild(List(
-      organization := "org.tritsch.example",
-      scalaVersion := "2.12.5",
-      version      := "0.1.0-SNAPSHOT"
+      organization := "rolandtritsch",
+      name         := "scala-roland",
+      scalaVersion := "2.12.5"
     )),
-    name := "scala-roland",
     libraryDependencies += scalaTest % Test
   )

@@ -1,0 +1,17 @@
+sudo: required
+
+language: scala
+
+notifications:
+  email:
+    recipients:
+      - roland@tritsch.org
+    on_success: always
+    on_failure: always
+
+before_install:
+
+script:
+  - sbt ensimeConfig
+  - sbt test
+  - sbt run
