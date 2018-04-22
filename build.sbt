@@ -1,3 +1,5 @@
+import ReleaseTransformations._
+
 lazy val root = (project in file("."))
   .settings(
     organization := "rolandtritsch",
@@ -17,11 +19,12 @@ lazy val root = (project in file("."))
       runTest,
       setReleaseVersion,
       commitReleaseVersion,
-      tagRelease,
+      // the next two steps are taken over by sbt-github-release
+      //tagRelease,
+      //publishArtifacts,
       releaseStepCommandAndRemaining("githubRelease"),
       setNextVersion,
       commitNextVersion,
       pushChanges
     )
-    //publishTo := Some(Resolver.file("file",  new File("target/releases")))
   )
