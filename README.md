@@ -1,5 +1,7 @@
 # My default Scala project template
 
+![Build Status](https://travis-ci.org/rolandtritsch/scala.g8.svg?branch=master)
+
 This is an/another **opinionated** template to create a scala project.
 
 Amoung other things it uses/features ...

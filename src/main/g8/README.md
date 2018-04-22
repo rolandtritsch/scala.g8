@@ -1,5 +1,7 @@
 # My Scala project
 
+![Build Status](https://travis-ci.org/rolandtritsch/scala-hello.svg?branch=master)
+
 * After running `g8 rolandtritsch/scala.g8` you have arrived here :)
 * Now you need to ...
   * Make the initial commit/push ...
