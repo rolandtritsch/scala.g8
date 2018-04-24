@@ -19,6 +19,7 @@ To use this/generate a project ...
 
 * you install g8 (with `brew install giter8`)
 * you run `g8 rolandtritsch/scala.g8`
+* you then follow the instructions in the `README` of the generated project
 
 To develop/test this ...
 

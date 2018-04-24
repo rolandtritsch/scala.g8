@@ -6,6 +6,7 @@
 * After running `g8 rolandtritsch/scala.g8` you have arrived here :)
 * Now you need to ...
   * Create a/the GitHub repo (through/with the browser :))
+  * You need to `mv _gitignore .gitignore`
   * You intit the repo with `git init`
   * You add all of the files with `git add .`
   * You make your initial commit with `git commit -m "Initial commit"`
