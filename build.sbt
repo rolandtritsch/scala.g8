@@ -19,10 +19,12 @@ lazy val root = (project in file("."))
       runTest,
       setReleaseVersion,
       commitReleaseVersion,
-      // the next two steps are taken over by sbt-github-release
-      //tagRelease,
+      tagRelease,
+      // for sbt-github-release to work, we need to add and adional step and need to push the tag first
+      pushChanges,
+      // the next step is taken over by sbt-github-release
       //publishArtifacts,
-      releaseStepCommandAndRemaining("githubRelease"),
+      releaseStepCommand("githubRelease"),
       setNextVersion,
       commitNextVersion,
       pushChanges

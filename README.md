@@ -18,8 +18,9 @@ Amoung other things the template uses/features/demos ...
 To use this/generate a project ...
 
 * you install g8 (with `brew install giter8`)
-* you run `g8 rolandtritsch/scala.g8`
-* you then follow the instructions in the `README` of the generated project
+* you create a repo on github (with a README in it) and clone it with `git clone ...`
+* you cd into the repo/project directory and run `g8 rolandtritsch/scala.g8`
+* you then follow the instructions in the `README.md` of the generated project
 
 To develop/test this ...
 

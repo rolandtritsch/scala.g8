@@ -3,7 +3,8 @@ import ReleaseTransformations._
 
 lazy val root = (project in file("."))
   .settings(
-    scalaVersion := "2.12.5",
+    scalaVersion := "2.12.4",
+    ensimeIgnoreScalaMismatch := true,
 
     organization := "rolandtritsch",
     name         := "scala-hello",
@@ -17,10 +18,12 @@ lazy val root = (project in file("."))
       runTest,
       setReleaseVersion,
       commitReleaseVersion,
-      // the next two steps are taken over by sbt-github-release
-      //tagRelease,
+      tagRelease,
+      // for sbt-github-release to work, we need to add an additional step and need to push the tag first
+      pushChanges,
+      // the next step is taken over by sbt-github-release
       //publishArtifacts,
-      releaseStepCommandAndRemaining("githubRelease"),
+      releaseStepCommand("githubRelease"),
       setNextVersion,
       commitNextVersion,
       pushChanges
