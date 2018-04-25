@@ -6,8 +6,8 @@ lazy val root = (project in file("."))
     scalaVersion := "2.12.4",
     ensimeIgnoreScalaMismatch := true,
 
-    organization := "rolandtritsch",
-    name         := "scala-hello",
+    organization := "$gh_user$",
+    name         := "$gh_repo$",
 
     libraryDependencies += scalaTest % Test,
 

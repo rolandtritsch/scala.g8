@@ -1,0 +1,1 @@
+Parameterized the template (with gh_name and gh_repo)

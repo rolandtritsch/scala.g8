@@ -1,7 +1,7 @@
 # My Scala project
 
-![Travis Build Status](https://travis-ci.org/rolandtritsch/scala-hello.svg?branch=master)
-[![GitHub Latest Release](http://img.shields.io/github/release/rolandtritsch/scala-hello/all.svg)](https://github.com/rolandtritsch/scala-hello/releases/latest)
+![Travis Build Status](https://travis-ci.org/$gh_user$/$gh_repo$.svg?branch=master)
+[![GitHub Latest Release](http://img.shields.io/github/release/$gh_user$/$gh_repo$/all.svg)](https://github.com/$gh_user$/$gh_repo$/releases/latest)
 
 * After running `g8 rolandtritsch/scala.g8` you have arrived here :)
 * Now you need to ...
