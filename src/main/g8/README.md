@@ -5,6 +5,7 @@
 
 * After running `g8 rolandtritsch/scala.g8` you have arrived here :)
 * Now you need to ...
+  * You need to `mv _README.md README.md`
   * You need to `mv _gitignore .gitignore`
   * You add all of the files with `git add .`
   * You make your initial commit with `git commit -m "Initial commit"`

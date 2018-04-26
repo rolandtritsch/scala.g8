@@ -19,7 +19,7 @@ To use this/generate a project ...
 
 * you install g8 (with `brew install giter8`)
 * you create a repo on github (with a README in it) and clone it with `git clone ...`
-* you cd into the repo/project directory and run `g8 rolandtritsch/scala.g8` (using your github name and the name of the repo to generate the project)
+* you cd into the repo/project directory and run `g8 rolandtritsch/scala.g8 --force` (using your github name and the name of the repo to generate the project; using --force to override the existing README)
 * you then follow the instructions in the `README.md` of the generated project
 
 To develop/test this ...
