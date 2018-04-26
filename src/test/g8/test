@@ -1,0 +1,4 @@
+> ensimeConfig
+$ exists ./.ensime
+> test
+> run

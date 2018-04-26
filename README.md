@@ -26,8 +26,6 @@ To develop/test this ...
 
 * you fork the repo
 * you make the changes you want to make
-* you run `sbt g8` or `sbt g8Test` (to generate an instance of the template)
-* you then `cd target/g8` and run `sbt run` and `sbt test`
-* optionally you can test anything else (`sbt doc`, `sbt scalafmt`, ...)
+* you run `sbt g8Test` (to run the scripted test in `src/test/g8` on an instance of the template)
 * you then `sbt add .` and `sbt commit -m "..."` and `sbt push` your changes (feel free to send me a pull request :))
 * to make a release you need to create the release notes (in the `notes` directory) and then you need to run `sbt "release with-defaults"` (note: this will use sbt-github-release to upload the release artifacts to your github repo. For that to work you need to put an oauth token into ~/.github. Please consult the sbt-github-release README to find out how to do this)

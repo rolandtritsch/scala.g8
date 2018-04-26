@@ -2,10 +2,12 @@ package org.tritsch.example
 
 /** [[Hello]] object
   */
-object Hello extends Greeting with App {
-  println(greeting)
-}
+object Hello {
+  def greeting(name: String): String = {
+    "hello, " + name
+  }
 
-trait Greeting {
-  lazy val greeting: String = "hello, world"
+  def main(args: Array[String]): Unit = {
+    println(greeting("world"))
+  }
 }
