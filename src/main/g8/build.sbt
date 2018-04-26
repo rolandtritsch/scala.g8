@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
     name         := "$gh_repo$",
 
     libraryDependencies += scalaTest % Test,
+    libraryDependencies += scalaCheck % Test,
 
     releaseProcess := Seq[ReleaseStep](
       checkSnapshotDependencies,
