@@ -1,0 +1,2 @@
+* Added scripted test
+* Added HelloSpec
