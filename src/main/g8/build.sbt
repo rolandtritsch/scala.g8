@@ -11,6 +11,11 @@ lazy val root = (project in file("."))
 
     libraryDependencies += scalaTest % Test,
     libraryDependencies += scalaCheck % Test,
+    libraryDependencies += scalaMeter % Test,
+
+    testFrameworks += new TestFramework(
+      "org.scalameter.ScalaMeterFramework"
+    ),
 
     releaseProcess := Seq[ReleaseStep](
       checkSnapshotDependencies,
