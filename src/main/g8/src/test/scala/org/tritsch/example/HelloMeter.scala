@@ -1,4 +1,4 @@
-package org.tritsch.example
+package $package$
 
 import org.scalameter.api._
 import org.scalameter.picklers.Implicits._

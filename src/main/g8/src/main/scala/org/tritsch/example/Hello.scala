@@ -1,4 +1,4 @@
-package org.tritsch.example
+package $package$
 
 /** [[Hello]] object
   */

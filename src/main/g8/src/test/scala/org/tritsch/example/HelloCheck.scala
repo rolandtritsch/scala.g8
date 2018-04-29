@@ -1,4 +1,4 @@
-package org.tritsch.example
+package $package$
 
 import org.scalatest._
 import org.scalatest.prop._
