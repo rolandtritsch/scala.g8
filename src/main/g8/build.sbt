@@ -4,10 +4,9 @@ import ReleaseTransformations._
 lazy val root = (project in file("."))
   .settings(
     scalaVersion := "2.12.4",
-    ensimeIgnoreScalaMismatch := true,
 
     organization := "$gh_user$",
-    name         := "$gh_repo$",
+    name := "$gh_repo$",
 
     libraryDependencies += scalaTest % Test,
     libraryDependencies += scalaCheck % Test,
