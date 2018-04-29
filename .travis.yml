@@ -12,8 +12,4 @@ notifications:
 before_install:
 
 script:
-  - sbt g8
-  - cd target/g8
-  - sbt run
-  - sbt test
-  - sbt ensimeConfig
+  - sbt g8Test
