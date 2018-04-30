@@ -2,3 +2,4 @@
 $ exists ./.ensime
 > test
 > run
+> doc

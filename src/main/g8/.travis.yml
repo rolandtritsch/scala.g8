@@ -15,3 +15,4 @@ script:
   - sbt ensimeConfig
   - sbt test
   - sbt run
+  - sbt doc
