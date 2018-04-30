@@ -22,7 +22,7 @@ object Hello {
     */
   def greeting(name: String): String = {
     require(name.nonEmpty, "name.nonEmpty failed")
-    s"\${prefix},  \${name}"
+    s"\${prefix}, \${name}"
   } ensuring(result => result.nonEmpty && result.size > name.size)
 
   /** The [[main]] function
