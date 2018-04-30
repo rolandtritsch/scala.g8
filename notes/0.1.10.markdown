@@ -1,0 +1,2 @@
+* Made the package parameter work
+* Fixed the bug with the wrong location of the default.properties file
