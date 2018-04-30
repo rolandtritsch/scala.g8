@@ -6,6 +6,7 @@
 * After running `g8 rolandtritsch/scala.g8` you have arrived here :)
 * Now you need to ...
   * You need to `mv _gitignore .gitignore`
+  * You need to edit `src/main/scala/package.scala` to change the package name (have not figured out yet how to do on init() and a last() on $package$)
   * You add all of the files with `git add .`
   * You make your initial commit with `git commit -m "Initial commit"`
   * Push the changes/the first commit to the repo with `git push`
