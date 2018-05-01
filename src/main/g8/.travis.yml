@@ -16,3 +16,6 @@ script:
   - sbt test
   - sbt run
   - sbt doc
+  - sbt scalafmt
+  - sbt test:scalafmt
+  - sbt sbt:scalafmt

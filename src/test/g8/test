@@ -3,3 +3,6 @@ $ exists ./.ensime
 > test
 > run
 > doc
+> scalafmt
+> test:scalafmt
+> sbt:scalafmt
