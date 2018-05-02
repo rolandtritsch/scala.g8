@@ -1,0 +1,2 @@
+* Adding scala formating
+* Adding scala logging
