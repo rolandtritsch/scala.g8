@@ -1,5 +1,7 @@
 package $package$
 
+import com.typesafe.scalalogging.LazyLogging
+
 /** [[$package$.Hello]] object.
   *
   * Defines the [[main]] function and the [[greeting]] function.
@@ -8,7 +10,7 @@ package $package$
   * @note This is by no means complete. It is just to illustrate how this (scala docs) works.
   * @todo Add more documentation, with more tags (for demonstration purposes).
   */
-object Hello {
+object Hello extends LazyLogging {
 
   /** The [[greeting]] function.
     *
@@ -25,12 +27,14 @@ object Hello {
     s"\${prefix}, \${name}"
   } ensuring(result => result.nonEmpty && result.size > name.size)
 
-  /** The [[main]] function
+  /** The [[main]] function.
     *
     * Entry point. Just to call [[greeting]].
     */
   def main(args: Array[String]): Unit = {
     require(args.isEmpty, s"args.isEmpty failed; with >\${args.toList}<")
+    logger.info("I am about to print something ...")
     println(greeting("world"))
+    logger.debug("I printed something!")
   }
 }

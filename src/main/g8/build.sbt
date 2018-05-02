@@ -11,6 +11,8 @@ lazy val root = (project in file("."))
     libraryDependencies += scalaTest % Test,
     libraryDependencies += scalaCheck % Test,
     libraryDependencies += scalaMeter % Test,
+    libraryDependencies += logbackClassic,
+    libraryDependencies += scalaLogging,
 
     testFrameworks += new TestFramework(
       "org.scalameter.ScalaMeterFramework"
