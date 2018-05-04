@@ -1,0 +1,4 @@
+* First main/major release
+* Added logging
+* Final polishing on the READMEs and the documentation
+* This is ready to go ... Enjoy :)

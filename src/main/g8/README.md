@@ -11,14 +11,14 @@
   * You add all of the files with `git add .`
   * You make your initial commit with `git commit -m "Initial commit"`
   * Push the changes/the first commit to the repo with `git push`
-  * Get a/the oauth token configured (to make sbt-github-release work)
+  * Get a/the [oauth token configured](https://github.com/ohnosequences/sbt-github-release#credentials) (to make sbt-github-release work)
   * Make the initial release with `sbt "release with-defaults"`
 * Now you can try to ...
   * Run `sbt test` and `sbt run`
   * Generate a/the .ensime file with `sbt ensimeConfig`
   * Generate the documentation with `sbt doc`
   * Change the .travis.yml file and enable a/the travis integration on the repository
-  * ???
+  * Format all of the code with `sbt scalafmt`
 * Last but not least you can start to add code ...
   * And test it with `sbt test`
   * When you are happy you `sbt add/commit/push` your changes
