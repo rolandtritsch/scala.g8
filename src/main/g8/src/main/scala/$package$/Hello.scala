@@ -1,8 +1,8 @@
-package org.tritsch.example
+package $package$
 
 import com.typesafe.scalalogging.LazyLogging
 
-/** [[org.tritsch.example.Hello]] object.
+/** [[$package$.Hello]] object.
   *
   * Defines the [[main]] function and the [[greeting]] function.
   *
@@ -25,7 +25,7 @@ object Hello extends LazyLogging {
   def greeting(name: String): String = {
     require(name.nonEmpty, "name.nonEmpty failed")
     logger.info("I am about to print something ...")
-    s"${prefix}, ${name}"
+    s"\${prefix}, \${name}"
   } ensuring(result => result.nonEmpty && result.size > name.size)
 
   /** The [[main]] function.
@@ -33,7 +33,7 @@ object Hello extends LazyLogging {
     * Entry point. Just to call [[greeting]].
     */
   def main(args: Array[String]): Unit = {
-    require(args.isEmpty, s"args.isEmpty failed; with >${args.toList}<")
+    require(args.isEmpty, s"args.isEmpty failed; with >\${args.toList}<")
     println(greeting("world"))
     logger.debug("I printed something!")
   }

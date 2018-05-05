@@ -13,7 +13,7 @@
         </encoder>
     </appender>
 
-    <logger name="org.tritsch.example" level="info"/>
+    <logger name="$package$" level="info"/>
 
     <root level="warn">
         <appender-ref ref="console"/>

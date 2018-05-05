@@ -5,8 +5,8 @@ lazy val root = (project in file("."))
   .settings(
     scalaVersion := "2.12.4",
 
-    organization := "rolandtritsch",
-    name := "scala-hello",
+    organization := "$gh_user$",
+    name := "$gh_repo$",
 
     logLevel := Level.Info,
 
