@@ -13,7 +13,9 @@
         </encoder>
     </appender>
 
-    <root level="info">
+    <logger name="org.tritsch.example" level="info"/>
+
+    <root level="warn">
         <appender-ref ref="console"/>
         <appender-ref ref="file"/>
     </root>

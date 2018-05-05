@@ -14,7 +14,7 @@
   * Get a/the [oauth token configured](https://github.com/ohnosequences/sbt-github-release#credentials) (to make sbt-github-release work)
   * Make the initial release with `sbt "release with-defaults"`
 * Now you can try to ...
-  * Run `sbt test` and `sbt run`
+  * Run `sbt test` and `sbt run` (amoung other things the test creates a/the ScalaMeter benchmark report in `./target/benchmark/report/index.html`)
   * Generate a/the .ensime file with `sbt ensimeConfig`
   * Generate the documentation with `sbt doc`
   * Change the .travis.yml file and enable a/the travis integration on the repository

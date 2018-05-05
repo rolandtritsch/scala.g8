@@ -5,8 +5,10 @@ lazy val root = (project in file("."))
   .settings(
     scalaVersion := "2.12.4",
 
-    organization := "$gh_user$",
-    name := "$gh_repo$",
+    organization := "rolandtritsch",
+    name := "scala-hello",
+
+    logLevel := Level.Info,
 
     libraryDependencies += scalaTest % Test,
     libraryDependencies += scalaCheck % Test,
@@ -17,6 +19,9 @@ lazy val root = (project in file("."))
     testFrameworks += new TestFramework(
       "org.scalameter.ScalaMeterFramework"
     ),
+
+    logBuffered := false,
+    parallelExecution in Test := false,
 
     releaseProcess := Seq[ReleaseStep](
       checkSnapshotDependencies,
