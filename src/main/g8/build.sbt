@@ -36,6 +36,10 @@ lazy val root = (project in file("."))
       // the next step is taken over by sbt-github-release
       //publishArtifacts,
       releaseStepCommand("githubRelease"),
+      // on the way out ... wip the code into shape
+      releaseStepCommand("scalafmt"),
+      releaseStepCommand("test:scalafmt"),
+      releaseStepCommand("sbt:scalafmt"),
       setNextVersion,
       commitNextVersion,
       pushChanges
