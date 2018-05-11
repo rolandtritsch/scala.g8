@@ -1,0 +1,2 @@
+* Added logging
+* Added scalafmt to the release process
