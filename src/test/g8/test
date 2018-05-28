@@ -1,6 +1,7 @@
 > ensimeConfig
 $ exists ./.ensime
-> test
+> testOnly org.tritsch.example.HelloSpec
+> testOnly org.tritsch.example.HelloCheck
 > run
 > doc
 > scalafmt
