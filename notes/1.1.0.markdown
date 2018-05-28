@@ -1,0 +1,2 @@
+* Fixed the problem with the domain and the project and the package.scala file
+* Made sure that teh code get formated as part of the release process
